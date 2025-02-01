@@ -1,0 +1,157 @@
+body{
+    background-color: rgb(222, 221, 221);
+}
+.grid{
+    width: 80%;
+    height: 30vh;
+    border: 2px solid gray;
+    display: grid;
+    grid-template-areas: "as as as1"
+    "as2 as3 as1";
+    gap: 10px;
+    padding: 20px;
+    color: white;
+    margin-top: 10px;
+}
+.grid h1{
+    margin-left: 10px;
+    font-size: 24px;
+   
+
+}
+.grid-items{
+    /* width: 100px;
+    height: 100px; */
+    background-color: black;
+    border-radius: 5px;
+}
+.grid-items:nth-child(1){
+    grid-area: as;
+}
+.grid-items:nth-child(2){
+    grid-area: as1;
+}.grid-items:nth-child(3){
+    grid-area: as2;
+}.grid-items:nth-child(4){
+    grid-area: as3;
+}
+.grid-items:nth-child(5){
+    grid-area: as4;
+}
+.main{
+    width: 23%;
+    /* background-color: white; */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.main ins{
+    font-size: 34px;
+}
+.main p{
+    margin-top: 30px;
+    width: 88%;
+}
+.main a{
+    color: black;
+    text-decoration:none;
+    border-bottom: 1px solid black;
+}
+.parent{
+    display: flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.grid1{
+    width: 80%;
+    height: 30vh;
+    border: 2px solid gray;
+    display: grid;
+    grid-template-areas: "as as as1 as1"
+    "as2 as3 as3 as3 "
+    "as4 as4 as4 as4";
+    gap: 10px;
+    padding: 20px;
+    color: white;
+    margin-top: 10px; 
+}
+.grid1 h1{
+    font-size: 24px;
+    margin-left: 10px;
+
+}
+.grid2{
+    width: 80%;
+    height: 30vh;
+    border: 2px solid gray;
+    display: grid;
+    grid-template-areas: "as as  as1 as1 as4 as4"
+    "as2 as3 as1  as1 as4 as4"
+    "as2 as3 as1 as1 as4 as4"
+    ;
+    gap: 10px;
+    padding: 20px;
+    color: white;
+    margin-top: 10px;   
+}
+.grid2 h1{
+    font-size: 24px;
+    margin-left: 10px;
+
+}
+.grid3{
+    width: 80%;
+    height: 30vh;
+    border: 2px solid gray;
+    display: grid;
+    grid-template-areas: "as as1 as1"
+    "as2 as3 as3"
+    ;
+    gap: 10px;
+    padding: 20px;
+    color: white;
+    margin-top: 10px;   
+}
+.grid3 .grid-items:nth-child(2){
+    background-color: grey;
+
+}
+.grid3 .grid-items{
+    width: 140px;
+    height: 60px;
+}
+.grid3 .grid-items:nth-child(2){
+    margin-top: 30px;
+}
+.grid3 h1{
+    font-size: 20px;
+    margin-left: 10px;
+
+}
+.grid4{
+    width: 80%;
+    height: 30vh;
+    border: 2px solid gray;
+    display: grid;
+    grid-template-areas: "as as1 as1"
+    "as2 as3 as3"
+    "as2 as3 as3"
+    "as2 as3 as3"
+    "as2 as3 as3"
+    "as4 as4 as4"
+    ;
+    gap: 10px;
+    padding: 20px;
+    color: white;
+    margin-top: 10px;   
+}
+.grid4 h1{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.grid4 .grid-items:nth-child(2){
+    background-color: gray;
+}
+.grid4 .grid-items:nth-child(5){
+    background-color: gray;
+}
